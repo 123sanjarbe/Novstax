@@ -18,6 +18,13 @@ const uz = {
     ctaRanks: "Ranklarni ko‘rish",
     ctaTokens: "Tokenlar",
   },
+  whyStrip: {
+    title: "Nega aynan Novstax?",
+    lead:
+      "Novstax anarxiya va tezkor o‘yin uchun yig‘ilgan: past ping, barqaror dunyo va 24/7 onlayn — rank, token va donat shaffof narxlarda, javob esa Telegram orqali tez.",
+    chips:
+      "Past ping|24/7 onlayn|Barqaror dunyo|Tezkor donat|3 til|Shaffof narxlar|Faol admin|Anarxiya rejimi",
+  },
   heroCrest: {
     badge: "Siz uchun",
     titleHi: "Novstax",
@@ -47,6 +54,17 @@ const uz = {
   ranksPage: {
     title: "Ranklar",
     lead: "Serverdagi eng yaxshi imtiyozlar. Umrbod yoki 30 kunlik variantlar.",
+  },
+  rankMode: {
+    chooseHint: "Avval turini tanlang — keyin shu turdagi barcha ranklar ochiladi.",
+    lifeTitle: "Umrbod ranklar",
+    lifeDesc: "Cheksiz muddat. Barcha umrbod narxlari va imtiyozlar.",
+    d30Title: "30 kunlik ranklar",
+    d30Desc: "Har 30 kunda yangilanadigan muddatli paketlar.",
+    open: "Ko‘rish",
+    back: "← Qaytish",
+    listLife: "Umrbod ranklar ro‘yxati",
+    list30: "30 kunlik ranklar ro‘yxati",
   },
   tokensPage: {
     title: "Tokenlar va boshqalar",
@@ -142,6 +160,13 @@ const uzCyrl = {
     ctaRanks: "Ранкларни кўриш",
     ctaTokens: "Токенлар",
   },
+  whyStrip: {
+    title: "Нега айнан Novstax?",
+    lead:
+      "Novstax анархия ва тез ўйин учун йиғилган: паст пинг, барқарор дунё ва 24/7 онлайн — ранг, токен ва донат шофоф нархларда, жавоб эса Telegram орқали тез.",
+    chips:
+      "Паст пинг|24/7 онлайн|Барқарор дунё|Тез донат|3 тил|Шофоф нархлар|Фаол админ|Анархия режими",
+  },
   heroCrest: {
     badge: "Сиз учун",
     titleHi: "Novstax",
@@ -171,6 +196,17 @@ const uzCyrl = {
   ranksPage: {
     title: "Ранклар",
     lead: "Сервердаги энг яхши имтиёзлар. Умрбод ёки 30 кунлик вариантлар.",
+  },
+  rankMode: {
+    chooseHint: "Аввал турини танланг — кейин шу турдаги барча ранклар очилади.",
+    lifeTitle: "Умрбод ранклар",
+    lifeDesc: "Чексиз муддат. Барча умрбод нархлари ва имтиёзлар.",
+    d30Title: "30 кунлик ранклар",
+    d30Desc: "Ҳар 30 кунда янгиланадиган муддатли пакетлар.",
+    open: "Кўриш",
+    back: "← Қайтиш",
+    listLife: "Умрбод ранклар рўйхати",
+    list30: "30 кунлик ранклар рўйхати",
   },
   tokensPage: {
     title: "Токенлар ва бошқалар",
@@ -266,6 +302,13 @@ const ru = {
     ctaRanks: "Смотреть ранги",
     ctaTokens: "Токены",
   },
+  whyStrip: {
+    title: "Почему именно Novstax?",
+    lead:
+      "Novstax заточен под анархию и быстрый геймплей: низкий пинг, стабильный мир и онлайн 24/7 — ранги, токены и донат с прозрачными ценами, ответы в Telegram без ожидания.",
+    chips:
+      "Низкий пинг|24/7 онлайн|Стабильный мир|Быстрый донат|3 языка|Честные цены|Активные админы|Режим анархии",
+  },
   heroCrest: {
     badge: "Для вас",
     titleHi: "Novstax",
@@ -295,6 +338,17 @@ const ru = {
   ranksPage: {
     title: "Ранги",
     lead: "Лучшие привилегии на сервере. Навсегда или на 30 дней.",
+  },
+  rankMode: {
+    chooseHint: "Сначала выберите тип — затем откроется полный список рангов.",
+    lifeTitle: "Навсегда",
+    lifeDesc: "Бессрочный доступ. Все цены и привилегии навсегда.",
+    d30Title: "30 дней",
+    d30Desc: "Пакеты с продлением каждые 30 дней.",
+    open: "Открыть",
+    back: "← Назад",
+    listLife: "Ранги навсегда",
+    list30: "Ранги на 30 дней",
   },
   tokensPage: {
     title: "Токены и другое",

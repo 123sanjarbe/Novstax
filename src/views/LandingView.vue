@@ -1,10 +1,11 @@
 <script setup>
 import { computed, ref } from "vue";
 import GlowCard from "@/components/GlowCard.vue";
+import RankSection from "@/components/RankSection.vue";
+import WhyNovstaxStrip from "@/components/WhyNovstaxStrip.vue";
 
 const HERO_CREST_BG =
   "https://tse2.mm.bing.net/th/id/OIP.RPlEsZKjAMiy5eAu0vYDygHaEK?rs=1&pid=ImgDetMain&o=7&rm=3";
-import { ranks } from "@/data/ranks";
 import { tokenPacks } from "@/data/tokens";
 import { donateKeys, banRemoval } from "@/data/extras";
 import { useI18n } from "@/composables/useI18n";
@@ -13,7 +14,7 @@ import { useReveal } from "@/composables/useReveal";
 import { formatMoney, formatTokens } from "@/utils/format";
 
 const { t } = useI18n();
-const { rankHref, tokenHref, keyHref, unbanHref, contactHref } = useTelegramBuy(t);
+const { tokenHref, keyHref, unbanHref, contactHref } = useTelegramBuy(t);
 const ip = "Novstax.gomc.uz";
 const copied = ref(false);
 const crestPills = computed(() =>
@@ -98,6 +99,8 @@ function sendContact() {
       </section>
     </div>
 
+    <WhyNovstaxStrip />
+
     <section id="about" class="section section--band reveal-up">
       <div class="cards-3">
         <article class="mini-card">
@@ -115,29 +118,7 @@ function sendContact() {
       </div>
     </section>
 
-    <section id="ranks" class="section section--tight reveal-up">
-      <header class="section-head">
-        <div class="section-kicker">Novstax</div>
-        <h2 class="section-title">{{ t("ranksPage.title") }}</h2>
-        <p class="section-lead">{{ t("ranksPage.lead") }}</p>
-      </header>
-      <div class="rank-grid">
-        <GlowCard v-for="(r, idx) in ranks" :key="`${r.id}-${r.variant}-${idx}`" :elevated="r.id === 'prime' && r.variant === 'life'">
-          <div class="rank-top">
-            <div class="rank-title-row">
-              <span class="rank-emoji">{{ r.emoji }}</span>
-              <h3 class="rank-name">{{ t(`ranks.${r.id}.name`) }}</h3>
-            </div>
-            <span class="pill" :class="{ 'pill-hot': r.variant === 'life' }">{{ t(`variant.${r.variant}`) }}</span>
-          </div>
-          <div class="rank-price">{{ formatMoney(r.price) }}</div>
-          <ul class="rank-list">
-            <li v-for="i in 4" :key="i">{{ t(`ranks.${r.id}.features.${i - 1}`) }}</li>
-          </ul>
-          <a class="buy-link" :href="rankHref(r)" target="_blank" rel="noopener noreferrer">{{ t("buy") }}</a>
-        </GlowCard>
-      </div>
-    </section>
+    <RankSection />
 
     <section id="tokens" class="section section--tight reveal-up">
       <header class="section-head">
